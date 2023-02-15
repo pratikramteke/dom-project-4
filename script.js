@@ -1,0 +1,24 @@
+const barbarianStats = document.querySelector(
+  ".clash-card__unit-stats--barbarian"
+);
+const archer = document.querySelector(".clash-card.archer");
+const archerStats = document.querySelector(".clash-card__unit-stats--archer");
+const giantStats = document.querySelector(".clash-card__unit-stats--giant");
+const goblin = document.querySelector(".clash-card.goblin");
+const goblinStats = document.querySelector(".clash-card__unit-stats--goblin");
+const wizardStats = document.querySelector(".clash-card__unit-stats--wizard");
+
+archer.children[2].innerText = "The Archer";
+goblin.children[2].innerText = "The Goblin";
+
+main(barbarianStats, "#ec9b3b");
+main(archerStats, "#ee5487");
+main(giantStats, "#f6901a");
+main(goblinStats, "#82bb30");
+main(wizardStats, "#4facff");
+
+function main(troop, color) {
+  troop.style.background = color;
+  troop.style.color = "white";
+  troop.children[2].style.color = "white";
+}
